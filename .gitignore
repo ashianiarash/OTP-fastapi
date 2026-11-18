@@ -1,1 +1,91 @@
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Build
+build/
+dist/
+*.egg-info/
+.eggs/
+wheels/
+
+# =========================
+# Virtual environments
+# =========================
+.venv/
+venv/
+env/
+ENV/
+
+# =========================
+# Environment variables / Secrets
+# =========================
 .env
+.env.*
+!.env.example
+
+# =========================
+# IDEs
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# Testing / Coverage
+# =========================
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+tox/
+.nox/
+
+# =========================
+# Type checking / Linting
+# =========================
+.mypy_cache/
+.pyright/
+.ruff_cache/
+
+# =========================
+# Logs
+# =========================
+*.log
+logs/
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Temporary files
+# =========================
+tmp/
+temp/
+
+# =========================
+# FastAPI uploads (if applicable)
+# =========================
+uploads/
+media/
+
+# =========================
+# Local database files
+# =========================
+*.db
+*.sqlite3
