@@ -1,4 +1,4 @@
-from pydantic import BaseModel , AfterValidator , BeforeValidator
+from pydantic import BaseModel , AfterValidator , BeforeValidator , Field
 from typing import Annotated
 
 def check_number_format(phone : str):
@@ -44,5 +44,8 @@ class UserBase(BaseModel):
     phone_number : Annotated[str ,AfterValidator(check_phone_number) , BeforeValidator(check_number_format)]
 class UserCreate(UserBase):
     pass 
-class UserOtpRequest(UserCreate):
+class UserOtpRequest(UserBase):
     pass
+
+class UserOtpResponse(BaseModel):
+    otp : int = Field(..., max_length=6 ,min_length=6)

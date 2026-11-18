@@ -8,3 +8,8 @@ class Settings(BaseSettings):
         )
     DATABASE_URL : str 
     SECERETKEY : str 
+
+
+
+def get_settings():
+    return Settings()
